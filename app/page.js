@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import SearchBar from "./components/SearchBar";
 import { headers } from "next/headers";
-import RecipeCard from "./components/RecipeCrad";
+import RecipeCard from "./components/RecipeCard";
 
 export default async function Home({searchParams}){
 
