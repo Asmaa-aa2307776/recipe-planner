@@ -1,14 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fredoka , Pacifico } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bubblyFont = Fredoka({
   subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-bubbly",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cursiveFont = Pacifico({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-cursive",
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${bubblyFont.variable} ${cursiveFont.variable}`}>
       <body>{children}</body>
     </html>
   );

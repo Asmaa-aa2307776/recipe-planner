@@ -1,0 +1,38 @@
+.searchBar{
+   flex: 1;
+   width: 40%; 
+   font-size: 16px;
+   padding: 12px 16px;
+   background: transparent;
+   border: none;
+}
+
+.searchBar:focus{
+    outline: none;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px; 
+  margin: 20px auto; 
+  overflow: hidden; 
+  border-radius: 15px;
+  border: 5px solid rgb(102, 27, 42);
+  background-color: rgb(248, 252, 255);
+}
+.searchButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding-right: 16px;
+    cursor: pointer;
+    color: rgb(74, 24, 24);
+}
+
+.searchButton:hover{
+    opacity: 0.7;
+}

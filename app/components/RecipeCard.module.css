@@ -1,0 +1,14 @@
+.recipeName{
+    font-family: var(--font-cursive), cursive;
+    margin-bottom: 10px;
+}
+
+.card{
+    background-color: rgb(184, 168, 149);
+    border: 3px solid  rgb(144, 111, 69);
+    padding: 15px;
+    margin-bottom: 10px;
+    max-width: 450px;
+    border-radius: 20px;
+    flex: 0 0 calc(50% - (20px * 1) / 2);
+}
