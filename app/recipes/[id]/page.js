@@ -107,6 +107,10 @@ async function RecipePage({params}){
             headers: {
                 Authorization: `Bearer ${process.env.RECIPE_API_KEY}`,
             },
+
+            next: {
+                revalidate:604800,
+            }
         }
     );
 
