@@ -1,0 +1,73 @@
+
+
+.page{
+  min-height: 100vh;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 1% 2% 10% 2%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.smokeDecorations{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 350px;
+    pointer-events: none;
+    opacity: 0.18;
+}
+
+.smokeDecorationsBottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 350px;
+    pointer-events: none;
+    opacity: 0.18;
+}
+
+.title{
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.recipeContent{
+    max-width: 60%;
+}
+
+.ingredientList ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+.instructionsList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: solid rgb(196, 184, 169) 2px;
+    border-radius: 10px;
+    padding: 2% 1%;
+    max-width: 45%;
+    background: rgb(196, 184, 169);
+
+}
+.homeButton{
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;
+    color: rgb(78, 60, 35);
+}
+.homeButton:hover{
+    opacity: 0.7;
+}

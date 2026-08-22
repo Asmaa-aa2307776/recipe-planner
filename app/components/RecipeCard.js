@@ -1,7 +1,9 @@
 import styles from "./RecipeCard.module.css";
+import Link from "next/link";
 
 export default function RecipeCard({recipe}){
     return(
+        <Link href={`/recipes/${recipe.id}`} className={styles.cardLink}>
         <div className={styles.card}>
             <h2 className={styles.recipeName}>{recipe.name}</h2>
             <p>{recipe.description}</p>
@@ -10,5 +12,6 @@ export default function RecipeCard({recipe}){
             <p>Protein: {recipe.protein}g</p>
 
         </div>
+        </Link>
     );
 }

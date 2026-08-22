@@ -39,6 +39,9 @@ h1, .recipe-planner-title {
   color: rgb(102, 27, 42); 
   font-weight: normal; 
 }
+h2{
+    color: rgb(102, 27, 42); 
+}
 
 * {
   box-sizing: border-box;
