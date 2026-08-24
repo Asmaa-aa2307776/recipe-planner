@@ -1,0 +1,48 @@
+.page{
+  min-height: 100vh;
+  background-color: antiquewhite;
+  margin: 0 ;
+  padding: 0;
+
+}
+.title{
+  font-size: 48px;
+  padding: 0 2% 0 2%;
+
+}
+
+.description{
+  font-size: 20px;
+  display: flex;
+  justify-content: left;
+  color: rgb(177, 137, 86);
+  margin: 10px 0 15px 0;
+  padding: 0 2% 0 2%;
+  
+}
+
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    padding: 0 2% 2% 2%;
+}
+.day{
+    min-width: 30%;
+    padding: 1%;
+}
+.day h2{
+    font-family: var(--font-cursive);
+    padding-bottom: 15px;
+}
+
+.homeButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2% 2% 0 0 ;
+    color: rgb(78, 60, 35);
+    cursor: pointer;
+}
+.homeButton:hover{
+    opacity: 0.7;
+}

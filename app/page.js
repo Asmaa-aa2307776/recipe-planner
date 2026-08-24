@@ -38,7 +38,7 @@ export default async function Home({searchParams}){
         </div>
         <div className={styles.navDynamic}>
           <a href="#" className={styles.navElm}>Recipes</a>
-          <a href="#" className={styles.navElm}>My Plan</a>
+          <a href="/plan" className={styles.navElm}>My Plan</a>
         </div>
           
       </nav>

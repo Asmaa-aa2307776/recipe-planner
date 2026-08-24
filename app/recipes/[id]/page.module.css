@@ -67,6 +67,7 @@
     max-width: 100%;
     justify-content: flex-end;
     color: rgb(78, 60, 35);
+    cursor: pointer;
 }
 .homeButton:hover{
     opacity: 0.7;
