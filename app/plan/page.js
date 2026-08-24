@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import {Home} from "lucide-react";
 import Link from "next/link";
+import AddRecipeButton from "./components/AddRecipeButton";
 
 const days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
@@ -19,14 +20,17 @@ export default function MyPlan(){
                     <div className={styles.meal}>
                         <h3>Breakfast</h3>
                         <p>No recipes added yet.</p>
+                        <AddRecipeButton></AddRecipeButton>
                     </div>
                     <div className={styles.meal}>
                         <h3>Lunch</h3>
                         <p>No recipes added yet.</p>
+                        <AddRecipeButton></AddRecipeButton>
                     </div>
                     <div className={styles.meal}>
                         <h3>Dinner</h3>
                         <p>No recipes added yet.</p>
+                        <AddRecipeButton></AddRecipeButton>
                     </div>
 
                 </div>

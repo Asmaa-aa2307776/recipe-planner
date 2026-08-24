@@ -1,0 +1,33 @@
+.addButton{
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: 2px solid rgb(196, 184, 169);
+    border-radius: 10px;
+    background-color: rgb(196, 184, 169);
+    color: rgb(78,60,35);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px grey;
+}
+
+.addButton:hover{
+    opacity: 0.7;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.picker{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(196, 184, 169) ;
+}
+.closeButton{
+    margin: 15px 5px 0 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.closeButton:hover{
+    opacity: 0.7;
+}
