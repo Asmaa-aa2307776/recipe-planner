@@ -1,0 +1,42 @@
+.page{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    text-align: center;
+    color: rgb(78,60,35);
+
+}
+.content h2{
+    font-family: var(--font-cursive), cursive;
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: rgb(102, 27, 42);
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.resetButton{
+    padding: 10px 20px;
+    border: 2px solid rgb(196, 184, 169);
+    border-radius: 10px;
+    background-color: rgb(196, 184, 169);
+    color: rgb(78,60,35);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px grey;
+}
+
+.resetButton:hover{
+    opacity: 0.7;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
