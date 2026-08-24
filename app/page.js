@@ -17,8 +17,16 @@ export default async function Home({searchParams}){
         headers: {
           Authorization: `Bearer ${process.env.RECIPE_API_KEY}`,
         },
+        next : {
+          revalidate: 604800,
+        },
       }
     );
+
+    if(!response.ok){
+      throw new Error("Failed to fetch recipes");
+      
+    }
     const data = await response.json();
     recipes = data.data;
   }
@@ -40,11 +48,12 @@ export default async function Home({searchParams}){
         <SearchBar />
       </div>
       <div className={styles.recipeCards}>
-        { recipes.map( (recipe) => (
+        { recipes.length > 0 ? (recipes.map( (recipe) => (
           <RecipeCard 
           key={recipe.id}
           recipe={recipe}/>
-        ))}
+        ))
+       ) : search ? (<p>No recipes found for {search} </p>): null}
       </div>
     </main>
   )

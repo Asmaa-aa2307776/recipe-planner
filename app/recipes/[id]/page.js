@@ -17,7 +17,7 @@ function SmokeLines(){
           .smokePath{
           fill:none;
           stroke: rgb(78, 60, 35);
-          stroke-width:1.5;
+          stroke-width:2;
           stroke-linecap: round;
           stroke-dasharray: 800;
           stroke-dashoffset: 800;
@@ -136,7 +136,7 @@ async function RecipePage({params}){
             <p>Difficulty: {recipe.difficulty}</p>
             <p>Cuisine: {recipe.cuisine}</p>
             <p>Servings: {recipe.servings}</p>
-            <p>Calories: {recipe.calories_per_serving}</p>
+            <p>Calories per serving: {recipe.calories_per_serving}</p>
             <p>Protein: {recipe.protein}g</p>
             <p>Prep time: {recipe.prep_time} min</p>
             <p>Cook time: {recipe.cook_time} min</p>

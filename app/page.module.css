@@ -59,3 +59,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.recipeCards h2{
+ color: rgb(78, 60, 35); 
+}

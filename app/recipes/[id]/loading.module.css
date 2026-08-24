@@ -1,0 +1,10 @@
+.page{
+  min-height: 100vh;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 1% 2% 10% 2%;
+  font-family: var(--font-cursive), cursive;
+  font-size: 26px;
+  color: rgb(78, 60, 35);
+
+}
