@@ -4,14 +4,17 @@ import styles from "./SearchBar.module.css";
 import {Search} from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export default function SearchBar(){
+export default function SearchBar({onSearch}){
     const [search, setSearch] = useState("");
     const router = useRouter();
 
-
     function handleSubmit(e){
         e.preventDefault();
+        if (onSearch){
+            onSearch(search);
+        } else {
         router.push(`/?search=${encodeURIComponent(search)}`);
+        }
     }
 
     return(

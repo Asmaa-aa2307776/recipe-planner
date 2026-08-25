@@ -20,17 +20,17 @@ export default function MyPlan(){
                     <div className={styles.meal}>
                         <h3>Breakfast</h3>
                         <p>No recipes added yet.</p>
-                        <AddRecipeButton></AddRecipeButton>
+                        <AddRecipeButton day={day} meal="Breakfast"></AddRecipeButton>
                     </div>
                     <div className={styles.meal}>
                         <h3>Lunch</h3>
                         <p>No recipes added yet.</p>
-                        <AddRecipeButton></AddRecipeButton>
+                        <AddRecipeButton day={day} meal="Lunch"></AddRecipeButton>
                     </div>
                     <div className={styles.meal}>
                         <h3>Dinner</h3>
                         <p>No recipes added yet.</p>
-                        <AddRecipeButton></AddRecipeButton>
+                        <AddRecipeButton day={day} meal="Dinner"></AddRecipeButton>
                     </div>
 
                 </div>
